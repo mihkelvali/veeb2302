@@ -74,12 +74,14 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px;
   border-bottom: 2px solid rgb(230, 230, 230);
+  width: 300px;
+  justify-content: space-between;
 }
 
 #todo-list > li > input {
   width: 20px;
   height: 20px;
 }
+
