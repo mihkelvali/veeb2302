@@ -11,11 +11,12 @@ const matkadeAndmed = {
       pealkiri: 'Rännak ümber Ülemiste',
       kestvus: '1h',
       pikkus: '1km',
-      pildiUrl: ''
+      pildiUrl: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357'
     },
     {
       pealkiri: 'Merematk Tallinna lahel',
-      kestvus: '3h'
+      kestvus: '3h',
+      pildiUrl: ''
     },
   ]
 };

@@ -7,12 +7,17 @@ async function kysiMatkad() {
 
   let matkadHTML = `<p>Matkade läbiviija: ${data.labiviija}</p>`;
 
+  matkadHTML += `<div class="matkad">`
   for (let i = 0; i < data.matkad.length; i++) {
-    matkadHTML += `<div class="matk">
-      <span>${data.matkad[i].pealkiri}</span>
-      <span>Kestvus ${data.matkad[i].kestvus}</span>
-    </div>`;
+    matkadHTML += `
+      <div class="matk">
+        <div>${data.matkad[i].pealkiri}</div>
+        <div>Kestvus ${data.matkad[i].kestvus}</div>
+        <img class="pilt" src="${data.matkad[i].pildiUrl}" />
+      </div>
+    `;
   }
+  matkadHTML += `</div>`
 
   app.innerHTML = matkadHTML;
 }
