@@ -16,7 +16,7 @@ const matkadeAndmed = {
     {
       pealkiri: 'Merematk Tallinna lahel',
       kestvus: '3h',
-      pildiUrl: ''
+      pildiUrl: 'https://github.com/mihkelvali/veeb2302/blob/33a73ac8a24132227b1278ccf77145f587e67421/loeng12/server/images/panda.jpeg?raw=true'
     },
   ]
 };

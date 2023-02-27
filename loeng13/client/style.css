@@ -1,0 +1,85 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(25, 25, 25);
+  color: rgb(230, 230, 230);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+#todo-input {
+  height: 40px;
+  width: 300px;
+  font-size: 18px;
+  padding-left: 8px;
+  background: rgb(50, 50, 50);
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  caret-color: rgb(150, 150, 150);
+  color: rgb(230, 230, 230);
+  transition: all 0.2s;
+}
+
+#todo-input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(150, 150, 150);
+}
+
+#todo-input:focus-visible {
+  outline: goldenrod;
+  border-color: goldenrod;
+}
+
+#todo-input:hover {
+  background: rgb(45, 45, 45);
+  border-color: rgb(150, 150, 150);
+}
+
+#add-todo {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 44px;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(230, 230, 230);
+  color: rgb(230, 230, 230);
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  margin-left: 15px;
+  transition: all 0.2s;
+}
+
+#add-todo:hover {
+  border-color: rgb(150, 150, 150);
+  background-color: rgb(10, 10, 10);
+}
+
+#todo-list {
+  padding: 0;
+}
+
+#todo-list > li {
+  font-size: 24px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(230, 230, 230);
+}
+
+#todo-list > li > input {
+  width: 20px;
+  height: 20px;
+}
