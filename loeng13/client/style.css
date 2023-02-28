@@ -80,8 +80,22 @@ body {
   justify-content: space-between;
 }
 
-#todo-list > li > input {
+#todo-list > li > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#todo-list > li > div > * {
+  cursor: pointer;
+}
+
+#todo-list > li > div > input {
   width: 20px;
   height: 20px;
+}
+
+#todo-list > li > span.checked {
+  text-decoration: line-through;
 }
 

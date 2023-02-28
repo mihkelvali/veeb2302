@@ -1,6 +1,12 @@
 const todoListHtml = document.querySelector('#todo-list');
 const todoInputHtml = document.querySelector('#todo-input');
 
+todoInputHtml.addEventListener('keyup', ({ key }) => {
+  if (key === 'Enter') {
+      addTodo();
+  }
+})
+
 let uusId = 0;
 let todoItems = [];
 
@@ -14,12 +20,15 @@ function renderTodos() {
     }
     todoListHtml.innerHTML += `
       <li>
-        <span>${todoItems[i].text}</span>
-        <input
-          type="checkbox"
-          onclick="toggleTodo(${todoItems[i].id})"
-          ${checkedString} 
-        />
+        <span class="${checkedString}">${todoItems[i].text}</span>
+        <div>
+          <input
+            type="checkbox"
+            onclick="toggleTodo(${todoItems[i].id})"
+            ${checkedString}
+          />
+          <a onclick="deleteTodo(${todoItems[i].id})">🗑</a>
+        </div>
       </li>
     `
   }
@@ -51,5 +60,15 @@ function toggleTodo(todoId) {
       break;
     }
   }
+  renderTodos();
 }
 
+function deleteTodo(todoId) {
+  for (let i = 0; i < todoItems.length; i++) {
+    if (todoItems[i].id == todoId) {
+      todoItems.splice(i, 1);
+      break;
+    }
+  }
+  renderTodos();
+}
