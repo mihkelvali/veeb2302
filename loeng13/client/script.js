@@ -1,14 +1,13 @@
 const todoListHtml = document.querySelector('#todo-list');
 const todoInputHtml = document.querySelector('#todo-input');
 
+let todoItems = [];
+
 todoInputHtml.addEventListener('keyup', ({ key }) => {
   if (key === 'Enter') {
       addTodo();
   }
 })
-
-let uusId = 0;
-let todoItems = [];
 
 function renderTodos() {
   todoListHtml.innerHTML = '';
@@ -34,21 +33,31 @@ function renderTodos() {
   }
 }
 
-renderTodos();
+async function loadTodos() {
+  const response = await fetch('http://localhost:8081');
+  const todos = await response.json();
+  todoItems = todos;
+  renderTodos();
+}
 
-function addTodo() {
+loadTodos();
+
+async function addTodo() {
   if (todoInputHtml.value == '') {
     console.log('input on tühi!');
     return;
   }
 
-  todoItems.push({
-    id: uusId,
-    isChecked: false,
-    text: todoInputHtml.value,
+  const response = await fetch('http://localhost:8081', {
+    method: 'PUT',
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ text: todoInputHtml.value })
   });
+  const todos = await response.json();
+  todoItems = todos;
 
-  uusId++;
   renderTodos();
   todoInputHtml.value = '';
 }
