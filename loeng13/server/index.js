@@ -7,15 +7,32 @@ app.use(express.json())
 let uusId = 0;
 let todoItems = [];
 
-app.post('/', function (req, res) {
-
-});
-
-app.delete('/', function (req, res) {
-
-});
-
+// muutmine
 app.put('/', function (req, res) {
+  for (let i = 0; i < todoItems.length; i++) {
+    let todoId = req.body.todoId;
+    if (todoItems[i].id == todoId) {
+      todoItems[i].isChecked = !todoItems[i].isChecked;
+      break;
+    }
+  }
+  res.send(JSON.stringify(todoItems));
+})
+
+// kustutamine
+app.delete('/', function (req, res) {
+  for (let i = 0; i < todoItems.length; i++) {
+    let todoId = req.body.todoId;
+    if (todoItems[i].id == todoId) {
+      todoItems.splice(i, 1);
+      break;
+    }
+  }
+  res.send(JSON.stringify(todoItems));
+});
+
+// uus todo
+app.post('/', function (req, res) {
   todoItems.push({
     id: uusId++,
     isChecked: false,
