@@ -48,7 +48,7 @@ async function addTodo() {
     return;
   }
 
-  const response = await fetch('http://localhost:8081', {
+  const response = await fetch('https://expressjs-postgres-production-5995.up.railway.app/', {
     method: 'POST',
     headers: {
       "Content-Type": "application/json",
