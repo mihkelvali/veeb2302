@@ -14,7 +14,7 @@ function renderTodos() {
 
   for (let i = 0; i < todoItems.length; i++) {
     let checkedString = '';
-    if (todoItems[i].isChecked) {
+    if (todoItems[i].ischecked) {
       checkedString = 'checked'
     }
     todoListHtml.innerHTML += `
