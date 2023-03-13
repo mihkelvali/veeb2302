@@ -63,12 +63,12 @@ async function addTodo() {
 }
 
 async function toggleTodo(todoIdToToggle) {
-  const response = await fetch('http://localhost:8081', {
+  const response = await fetch('https://expressjs-postgres-production-5995.up.railway.app/', {
     method: 'PUT',
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ todoId: todoIdToToggle })
+    body: JSON.stringify({ id: todoIdToToggle })
   });
   const todos = await response.json();
   todoItems = todos;
@@ -77,12 +77,12 @@ async function toggleTodo(todoIdToToggle) {
 }
 
 async function deleteTodo(todoId) {
-  const response = await fetch('http://localhost:8081', {
+  const response = await fetch('https://expressjs-postgres-production-5995.up.railway.app/', {
     method: 'DELETE',
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ todoId: todoId })
+    body: JSON.stringify({ id: todoId })
   });
   const todos = await response.json();
   todoItems = todos;

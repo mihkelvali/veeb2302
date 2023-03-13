@@ -1,0 +1,213 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #000000;
+    overflow-x: clip;
+}
+
+.pais {
+    background-image: url("assets/Hills@2x.png");
+    height: 778px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 32px;
+    padding-left: 72px;
+    padding-right: 80px;
+}
+
+.pais>nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+}
+
+.logo-pilt {
+    height: 64px;
+}
+
+.logo-tekst {
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 35px;
+    color: #0B0B0B;
+    display: flex;
+    flex-direction: column;
+}
+
+.parem-pool {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2.67px;
+    display: flex;
+    align-items: center;
+}
+
+.parem-pool>a {
+    margin-left: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.pais>.alumine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pais>.alumine>.sisu {
+    margin-top: 230px;
+
+}
+
+h1,
+h2,
+h4 {
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: #0B0B0B;
+}
+
+
+.pais>.alumine>.sisu>h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.pais>.alumine>.sisu>h1 {
+    font-size: 74px;
+    margin: 0;
+}
+
+.pais>.alumine>.sisu>h4 {
+    font-size: 21px;
+    margin-top: 14px;
+    max-width: 477px;
+}
+
+.pais>.alumine>.sisu>button {
+
+    background: #0B0B0B 0% 0% no-repeat padding-box;
+    letter-spacing: 2.25px;
+    color: #FFFFFF;
+    font-weight: 800;
+    padding: 21px 25px;
+    font-size: 12.5px;
+    border: none;
+}
+
+.pais>.alumine>.pilt {
+    background-image: url("assets/Image@2x.png");
+    height: 915px;
+    width: 915px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: -300px;
+    border-radius: 500px;
+}
+
+.teine {
+    padding-left: 80px;
+    margin-top: 120px;
+}
+
+.teine>.ylemine>h3.hall {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.teine>.ylemine>h3 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 58.33px;
+    margin: 0;
+    max-width: 500px;
+}
+
+.teine>.alumine {
+    display: flex;
+    gap: 34px;
+    justify-content: space-between;
+}
+
+.teine>.alumine>.vasak {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 25px;
+}
+
+.teine>.alumine>.vasak>section {
+    letter-spacing: 0px;
+    color: gray;
+    font-size: 21px;
+    line-height: 33px;
+    margin-bottom: 150px;
+}
+
+.teine>.alumine>.vasak>.nooled {
+    font-size: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nooled>.vasak,
+.nooled>.parem {
+    font-size: 72px;
+}
+
+.nooled>.kaldkriips {
+    margin: 0 10px;
+}
+
+.nooled>.kaldkriips,
+.nooled>.kokku-lehekylgi,
+.nooled>.parem {
+    color: #9A9A9A;
+}
+
+.nooled>.kaldkriips,
+.nooled>.kokku-lehekylgi {
+    font-size: 36px;
+}
+
+.nooled>.kokku-lehekylgi {
+    margin-top: 6px;
+}
+
+.teine>.alumine>.parem {
+    display: flex;
+    margin-top: 25px;
+    margin-right: -150px;
+}
+
+.teine>.alumine>.parem>.pilt {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 406px;
+    width: 309px;
+    margin-left: 34px;
+    box-shadow: 28px 29px 119px -16px rgba(0, 0, 0, 0.75);
+}
+
+.teine>.alumine>.parem>.pilt1 {
+    background-image: url('assets/tydruk-binokkel.png');
+}
+
+.teine>.alumine>.parem>.pilt2 {
+    background-image: url('assets/poiss-binokkel.png');
+
+}
+
+.teine>.alumine>.parem>.pilt3 {
+    background-image: url('assets/poisid-kaardiga.png');
+
+}
