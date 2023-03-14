@@ -107,8 +107,9 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: -300px;
+    right: -300px;
     border-radius: 500px;
+    position: absolute;
 }
 
 .teine {
