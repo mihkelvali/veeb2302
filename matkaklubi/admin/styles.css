@@ -1,4 +1,21 @@
+.sisu {
+  display: flex;
+  gap: 50px;
+}
+
 .matkad {
   display: flex;
   flex-direction: column;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lahter {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
