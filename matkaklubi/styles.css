@@ -1,4 +1,4 @@
-body {
+body, textarea {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     color: #000000;
@@ -89,15 +89,28 @@ h4 {
     max-width: 477px;
 }
 
-.pais>.alumine>.sisu>button {
-
+button {
     background: #0B0B0B 0% 0% no-repeat padding-box;
     letter-spacing: 2.25px;
     color: #FFFFFF;
     font-weight: 800;
     padding: 21px 25px;
     font-size: 12.5px;
-    border: none;
+    border: 1px solid #0B0B0B;
+    cursor: pointer;
+}
+
+button.inverted {
+    background-color: transparent;
+    color: #0B0B0B;
+}
+
+button:hover {
+    transform: scale(1.01);
+}
+
+button:active {
+    transform: scale(1);
 }
 
 .pais>.alumine>.pilt {
