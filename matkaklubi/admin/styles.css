@@ -3,6 +3,12 @@
   gap: 50px;
 }
 
+.vasak-paneel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .matkad {
   display: flex;
   flex-direction: column;
